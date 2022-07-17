@@ -1,0 +1,195 @@
+.wrapper-card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 100px auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
+    border-radius: 8px;
+    font-family: 'Montserrat';
+  
+  }
+  
+  .button-add {
+    color: white;
+    background-color: #7E72F2;
+    border-color: #7E72F2;
+    border-radius: 0px 0px 8px 8px;
+    padding: 4%;
+  }
+  
+  .reiting {
+    color: white;
+    background-color: #7E72F2;
+    width: 20%;
+    border-color: #7E72F2;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .img-laptop {
+    margin: 20px;
+  }
+  
+  .name-laptop {
+    margin: 10px 20px;
+  }
+  
+  .category-selection {
+    margin: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .star-line {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+  }
+  
+  .store {
+    background: #E5E5E5;
+  }
+  
+  .wrapper {
+    display: flex;
+    border: 1px solid #000000;
+    justify-content: center;
+    margin: 100px auto;
+    width: 80vw;
+    height: 200px;
+    align-items: center;
+    background: whitesmoke;
+  }
+  
+  .pagination {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .pagination:hover {
+    background: #7E72F2;
+    color: white;
+  }
+  
+  .pagination:active {
+    background: #e51997;
+    color: white;
+  }
+  
+  .page-back {
+    margin-right: 10px;
+  }
+  
+  .page-forvard {
+    margin-left: 10px;
+  }
+  
+  .active {
+    background: #7E72F2;
+    color: white;
+  }
+
+  .wrapper-search {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-text {
+    width: 100%;
+    border: 3px solid #7E72F2;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    height: 20px;
+    outline: none;
+}
+
+.search-text:focus {
+    color: black;
+}
+
+.search-btn {
+    width: 40px;
+    height: 36px;
+    border: 3px solid #7E72F2;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(96, 95, 95);
+}
+
+.wrapper-pagination {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 100px auto;
+    width: 80vw;
+    height: auto;
+    }
+    
+    .general-pages {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #E5E5E5;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      transition: .3s;
+      cursor: pointer;
+    }
+    .pages {
+        /* width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #E5E5E5; */
+        display: flex;
+        /* justify-content: space-around;
+        align-items: center;
+        transition: .3s;
+        cursor: pointer; */
+      }
+      
+      .general-pages:hover {
+        background: #7E72F2;
+        color: white;
+      }
+      
+      .general-pages:active {
+        background: #e51997;
+        color: white;
+      }
+      
+      .page-back {
+        margin-right: 10px;
+      }
+      
+      .active {
+        background-color: #7E72F2;
+        color: white;
+      }
+      
+      .page-forvard {
+        margin-left: 10px;
+      }
+      

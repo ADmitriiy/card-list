@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Card component</title>
+  <!-- <link rel="stylesheet" href="../../../../web-store/online-store/style-card.css"> -->
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    .wrapper {
+      width: 400px;
+      margin: 100px auto;
+    }
+
+    .store {
+  background: #E5E5E5;
+}
+/*
+.wrapper {
+  display: flex;
+  border: 1px solid #000000;
+  justify-content: center;
+  margin: 100px auto;
+  width: 80vw;
+  height: 200px;
+  align-items: center;
+  background: whitesmoke;
+} */
+
+.wrapper-pagination {
+display: flex;
+/* justify-content: center; */
+align-items: center;
+margin: 100px auto;
+width: 80vw;
+height: auto;
+}
+
+.general-pages {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.pages {
+  /* width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E5E5E5; */
+  display: flex;
+  /* justify-content: space-around;
+  align-items: center;
+  transition: .3s;
+  cursor: pointer; */
+}
+
+.general-pages:hover {
+  background: #7E72F2;
+  color: white;
+}
+
+.general-pages:active {
+  background: #e51997;
+  color: white;
+}
+
+.page-back {
+  margin-right: 10px;
+}
+
+.active {
+  background-color: #7E72F2;
+  color: white;
+}
+
+.page-forvard {
+  margin-left: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div id="root" class="wrapper"></div>
+
+  <script type="module">
+
+    // const title = "laptop"
+
+    // import {products} from './products.js';
+    import OnlineStorePage from './index.js';
+
+fetch('https://online-store.bootcamp.place/api/products')
+    .then(response => response.json())
+    .then(products => {
+    const page = new OnlineStorePage(products.slice(0, 8));
+    const root = document.querySelector('#root');
+
+    root.append(page.element)
+});
+
+
+  </script>
+</body>
+</html>
